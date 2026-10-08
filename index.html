@@ -1,0 +1,58 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PPTDF Risk Dashboard</title>
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1>PPTDF Risk Assessment Dashboard</h1>
+  <p>Zachman Framework Based Interactive Model</p>
+</header>
+
+<div class="container">
+
+  <aside class="sidebar">
+    <h2>Domains</h2>
+    <ul>
+      <li onclick="loadMain()">Home</li>
+      <li>Process</li>
+      <li>People</li>
+      <li>Technology</li>
+      <li>Data</li>
+      <li>Facilities</li>
+    </ul>
+  </aside>
+
+  <main>
+    <div id="chart"></div>
+  </main>
+
+  <aside class="rightpanel">
+    <h2>Information</h2>
+    <div class="card">
+      <b>Flow:</b><br>
+      Domain → Vulnerability → Threat → Source
+    </div>
+
+    <div class="card">
+      <b>Framework:</b><br>
+      Zachman + NIST
+    </div>
+
+    <div class="card">
+      <b>Status:</b><br>
+      Active
+    </div>
+  </aside>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
